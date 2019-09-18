@@ -3,7 +3,7 @@
 		"errno"=> "0",
 		"errmsg"=> "",
 		"pageData"=> array(
-			"name"=>"chameleo1n",
+			"name"=>"chameleon",
 			"age" => 10
 		)
 	);
