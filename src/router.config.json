@@ -1,11 +1,17 @@
 {
   "mode": "history",
   "domain": "https://www.chameleon.com",
-  "routes":[
+  "routes": [
     {
       "url": "/cml/h5/index",
       "path": "/pages/index/index",
       "name": "首页",
+      "mock": "index.php"
+    },
+    {
+      "url": "/cml/h5/index1",
+      "path": "/pages/index/index1",
+      "name": "首页1",
       "mock": "index.php"
     }
   ]

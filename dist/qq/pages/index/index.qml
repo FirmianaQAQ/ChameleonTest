@@ -1,7 +1,17 @@
-<cml-buildin-page title="chameleon" class=" cml-base cml-page">
-    <cml-buildin-scroller height="{{-1}}" class=" cml-base cml-scroller">
-      <view class="scroller-wrap  cml-base cml-view">
-        <demo-com title="{{title}}" image-src="{{chameleonSrc}}" class=" cml-view cml-demo-com"></demo-com>
-      </view>
-    </cml-buildin-scroller>
-</cml-buildin-page>
+<view class=" cml-base cml-view">
+  <first-com class=" cml-view cml-first-com"></first-com>
+
+  
+  <text class=" cml-base cml-text">{{message}}</text>
+  <text class="class1  cml-base cml-text">{{message2}}</text>
+
+  
+  <view qq:if="{{showlist}}" class=" cml-base cml-view">
+    <view qq:for="{{array}}" qq:for-index="idx" qq:for-item="itemName" qq:key="city" class=" cml-base cml-view">
+      <text class=" cml-base cml-text"> {{idx}}: {{itemName.city}}</text>
+    </view>
+  </view>
+
+  
+  <view bindtap="_cmlEventProxy" data-eventtap="{{['changeShow']}}" class=" cml-base cml-view"><text class=" cml-base cml-text">切换展示</text></view>
+</view>

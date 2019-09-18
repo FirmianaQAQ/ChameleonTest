@@ -65,7 +65,7 @@ var __cml__script = __webpack_require__("../../../../../usr/local/lib/node_modul
 /***/ "./src/router.config.json":
 /***/ (function(module, exports) {
 
-module.exports = {"mode":"history","domain":"https://www.chameleon.com","routes":[{"url":"/cml/h5/index","path":"/pages/index/index","name":"首页","mock":"index.php"}]}
+module.exports = {"mode":"history","domain":"https://www.chameleon.com","routes":[{"url":"/cml/h5/index","path":"/pages/index/index","name":"首页","mock":"index.php"},{"url":"/cml/h5/index1","path":"/pages/index/index1","name":"首页1","mock":"index.php"}]}
 
 /***/ })
 

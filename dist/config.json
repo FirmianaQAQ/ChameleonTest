@@ -1,0 +1,26 @@
+[
+    {
+        "wx": {
+            "appId": "123456",
+            "path": "/pages/index/index"
+        },
+        "baidu": {
+            "appId": "",
+            "path": "/pages/index/index"
+        },
+        "alipay": {
+            "appId": "",
+            "path": "/pages/index/index"
+        },
+        "web": {
+            "url": "https://www.chameleon.com/cml/h5/index"
+        },
+        "weex": {
+            "url": "//www.static.chameleon.com/cml/weex/ChameleonTest_c1529da08d84b56b841c.js",
+            "md5": "1FB2C474B5E0BED3B6551F177FDF1620",
+            "query": {
+                "path": "/pages/index/index"
+            }
+        }
+    }
+]

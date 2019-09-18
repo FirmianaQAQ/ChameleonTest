@@ -1,3 +1,0 @@
-<view class="{{full ? 'page-full' : 'page'}}  cml-base cml-view cml-fed2290a">
-  <slot class=" cml-base cml-slot cml-fed2290a"></slot>
-</view>

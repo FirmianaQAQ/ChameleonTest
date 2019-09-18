@@ -8,6 +8,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _chameleonRuntime = __webpack_require__("./node_modules/chameleon-runtime/index.js");
 
 var _chameleonRuntime2 = _interopRequireDefault(_chameleonRuntime);
@@ -16,14 +18,47 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Index = function Index() {
-  _classCallCheck(this, Index);
+var Index = function () {
+  function Index() {
+    _classCallCheck(this, Index);
 
-  this.data = {
-    title: "chameleon",
-    chameleonSrc: __webpack_require__("./src/assets/images/chameleon.png")
-  };
-};
+    this.data = {
+      message: "Hello Chameleon!",
+      array: [{
+        city: "北京"
+      }, {
+        city: "上海"
+      }, {
+        city: "广州"
+      }],
+      showlist: true
+    };
+    this.computed = {
+      message2: function message2() {
+        return "computed" + this.message;
+      }
+    };
+    this.watch = {
+      showlist: function showlist(newVal, oldVal) {
+        console.log("showlist changed:" + newVal);
+      }
+    };
+    this.methods = {
+      changeShow: function changeShow() {
+        this.showlist = !this.showlist;
+      }
+    };
+  }
+
+  _createClass(Index, [{
+    key: "created",
+    value: function created() {
+      console.log("生命周期");
+    }
+  }]);
+
+  return Index;
+}();
 
 exports.default = new Index();
 
@@ -36,13 +71,6 @@ exports.default = _chameleonRuntime2.default.createPage(exports.default).getOpti
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./src/assets/images/chameleon.png":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/chameleon_83ee00e.png";
 
 /***/ }),
 

@@ -1,7 +1,17 @@
-<view class=" cml-base cml-view cml-299440d2"><cml-buildin-page title="chameleon" class=" cml-base cml-page cml-299440d2">
-    <view class=" cml-base cml-view cml-299440d2"><cml-buildin-scroller height="{{-1}}" class=" cml-base cml-scroller cml-299440d2">
-      <view class="scroller-wrap  cml-base cml-view cml-299440d2">
-        <view class=" cml-base cml-view cml-299440d2"><demo-com title="{{title}}" image-src="{{chameleonSrc}}" class=" cml-base cml-demo-com cml-299440d2"></demo-com></view>
-      </view>
-    </cml-buildin-scroller></view>
-  </cml-buildin-page></view>
+<view class=" cml-base cml-view cml-299440d2">
+  <view class=" cml-base cml-view cml-299440d2"><first-com class=" cml-base cml-first-com cml-299440d2"></first-com></view>
+
+  
+  <text class=" cml-base cml-text cml-299440d2">{{message}}</text>
+  <text class="class1  cml-base cml-text cml-299440d2">{{message2}}</text>
+
+  
+  <view a:if="{{showlist}}" class=" cml-base cml-view cml-299440d2">
+    <view a:for="{{array}}" a:for-index="idx" a:for-item="itemName" a:key="city" class=" cml-base cml-view cml-299440d2">
+      <text class=" cml-base cml-text cml-299440d2"> {{idx}}: {{itemName.city}}</text>
+    </view>
+  </view>
+
+  
+  <view onTap="_cmlEventProxy" data-eventtap="{{['changeShow']}}" class=" cml-base cml-view cml-299440d2"><text class=" cml-base cml-text cml-299440d2">切换展示</text></view>
+</view>
